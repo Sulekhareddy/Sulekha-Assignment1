@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/createtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="16dp"
+        android:text="Create an account"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailtextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emailtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:text="Email address"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/emaileditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createtextView" />
+
+    <TextView
+        android:id="@+id/passwordtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginBottom="10dp"
+        android:text="Create password"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordeditText"
+        app:layout_constraintStart_toStartOf="@+id/emaileditText"
+        app:layout_constraintTop_toBottomOf="@+id/emaileditText" />
+
+    <TextView
+        android:id="@+id/repeatpasswordtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Repeat password"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/repeatpasswordeditText"
+        app:layout_constraintStart_toStartOf="@+id/passwordeditText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordeditText" />
+
+    <TextView
+        android:id="@+id/displaytextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginStart="37dp"
+        android:text="Your password should have a minimum of 8 characters and contain atleast one number, one uppercase and one lowercase letter. You can use special characters."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/nextbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeatpasswordeditText" />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Next"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displaytextView" />
+
+    <EditText
+        android:id="@+id/emaileditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Enter email address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/passwordtextView"
+        app:layout_constraintStart_toStartOf="@+id/emailtextView"
+        app:layout_constraintTop_toBottomOf="@+id/emailtextView" />
+
+    <EditText
+        android:id="@+id/passwordeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/repeatpasswordtextView"
+        app:layout_constraintStart_toStartOf="@+id/passwordtextView"
+        app:layout_constraintTop_toBottomOf="@+id/passwordtextView" />
+
+    <EditText
+        android:id="@+id/repeatpasswordeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/displaytextView"
+        app:layout_constraintStart_toStartOf="@+id/repeatpasswordtextView"
+        app:layout_constraintTop_toBottomOf="@+id/repeatpasswordtextView" />
+</android.support.constraint.ConstraintLayout>

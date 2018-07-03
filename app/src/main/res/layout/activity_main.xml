@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/welcometextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:text="GreenFlag"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/secondtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="109dp"
+        android:text="No Matter What"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/thirdtextView"
+        app:layout_constraintStart_toStartOf="@+id/welcometextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/thirdtextView"
+        android:layout_width="310dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="145dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="191dp"
+        android:text="GreenFlag customers can create an account to access"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fourthtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Car health updates"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/fifthtextView"
+        app:layout_constraintStart_toStartOf="@+id/thirdtextView"
+        app:layout_constraintTop_toBottomOf="@+id/thirdtextView" />
+
+    <TextView
+        android:id="@+id/fifthtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Request a rescue online"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sixthtextView"
+        app:layout_constraintStart_toStartOf="@+id/fourthtextView"
+        app:layout_constraintTop_toBottomOf="@+id/fourthtextView" />
+
+    <TextView
+        android:id="@+id/sixthtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:text="Policy information"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/createaccbutton"
+        app:layout_constraintStart_toStartOf="@+id/fifthtextView"
+        app:layout_constraintTop_toBottomOf="@+id/fifthtextView" />
+
+    <Button
+        android:id="@+id/createaccbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Create an account"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sixthtextView" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="88dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="65dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Login"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sixthtextView"
+        app:layout_constraintTop_toBottomOf="@+id/thirdtextView" />
+</android.support.constraint.ConstraintLayout>
